@@ -22,12 +22,10 @@
 
 .box {
   position: absolute;
-
   height: 200px;
   width: 200px;
   top: 200px;
   left: 50px;
-
   background: white;
 }
 
@@ -73,8 +71,8 @@
   border: 1px solid rgba(254, 200, 78, 0.3);
 }
 
-.gold-container {
-}
+/* .gold-container {
+} */
 
 .button span {
   display: grid;
@@ -110,7 +108,9 @@
   height: 100%;
 }
 
-body {
+.desktop-content {
+  width: 100%;
+  height: 100%;
   display: grid;
   place-items: center;
   height: 100vh;
@@ -205,4 +205,33 @@ body {
   height: 100%;
   width: 100%;
   overflow: hidden;
+}
+
+.mobile-content {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+}
+
+.mobile-bg-wrapper {
+  width: 100%;
+  height: 100%;
+}
+.mobile-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  /* complete change: form at the front and center and animation at the background  */
+  /* make the form the main thing, then add small animation behind */
+  .desktop-content {
+    display: none;
+  }
+  .mobile-content {
+    display: flex;
+  }
 }
