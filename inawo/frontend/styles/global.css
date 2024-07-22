@@ -12,40 +12,58 @@
   /* overflow: hidden; */
 }
 
+body{
+  background: #fcfcf7;
+}
+
 .boiler-grid {
   width: 100%;
   display: grid;
   place-items: center;
   height: 100vh;
   grid-template-columns: 20% 50% 30%;
-  background-color: #fcfcf7;
+  /* background-color: #fcfcf7; */
   position: relative;
 }
+
 .nav-container {
   height: 100%;
   display: grid;
-  grid-template-rows: 10% 90%;
-  padding: 10px;
-  position: absolute;
+  /* grid-template-rows: 10% 90%; */
+  /* padding: 10px; */
+  /* grid-gap: 20px; */
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
   /* background-color: blue; */
 }
 
+.nav-inner-flex > div > span, .hide {
+  display: none;
+}
+
 .nav-bar {
   display: grid;
-  grid-template-rows: auto 20%;
-  width: 180px;
-  height: 600px;
-  border: 1px solid black;
-  border-radius: 20px;
-  padding: 15px;
-  background-color: whitesmoke;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-  position: relative;
+  /* grid-template-rows: auto 20%; */
+  padding: 20px;
+  /* background-color: whitesmoke; */
+  /* box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3); */
+  /* position: absolute; */
+  border-right: 1.5px solid #eee;
   overflow: hidden;
+  justify-self: start;
+  /* align-items: start; */
 }
+
+.nav-bar > .nav-inner-flex{
+  display: grid;
+  grid-gap: 30px;
+  align-items: start;
+  align-self: start;
+  margin-top: 100px;
+} 
+
 
 .nav-inner-flex {
   display: flex;

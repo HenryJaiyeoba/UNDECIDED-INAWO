@@ -9,7 +9,7 @@ function Nav() {
       <div className="h-full w-full lg:hidden relative"></div>
       <span className="h-full w-full sm:block hidden">
         <div className="sm:grid nav-container">
-          <span className="">INAWO</span>
+          <span className="hide">INAWO</span>
           <nav className="nav-bar">
             <div className="nav-inner-flex">
               <div className="flex flex-row gap-4 justify-start items-center w-full hover:font-bold ease-in-out duration-200 icon ">
@@ -116,7 +116,7 @@ function Nav() {
                   d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
                 />
               </svg>
-              <span>More</span>
+              <span className="hide">More</span>
             </div>
           </nav>
         </div>

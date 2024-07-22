@@ -1,0 +1,155 @@
+.feed {
+    display: grid;
+    justify-items: center;
+    /* padding: 30px; */
+    grid-gap: 20px;
+    position: static;
+}
+
+.feed-bubble-row-container {
+    display: grid;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    background: inherit;
+    background: #fcfcf7;
+}
+
+.feed-bubble-row-header{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    border-bottom: 2px solid #eee;
+    width: 100%;
+    justify-self: start;
+    padding: 20px;
+    font-weight: bold;
+    grid-gap: 10px;
+}
+
+.feed-bubble-row-header > *:nth-child(2){
+    color: #c8c7c7;
+}
+
+.feed * {
+    /* border: 1px solid blue; */
+}
+
+.feed-card{
+    display: grid;
+    grid-gap: 20px;
+    /* width: 500px; */
+    align-items: start;
+    align-self: start;
+    background-color: rgba(0, 0, 0, 0.015);
+    padding: 25px 50px;
+}
+
+.card-header{
+    display: grid;
+    /* border: 1px solid blue; */
+    align-self: start;
+}
+
+.two-column-grid{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 15px;
+    /* border: 1px solid red; */
+    width: 100%;
+}
+
+.bias-left {
+    grid-template-columns: 1fr auto;
+    justify-self: start;
+}
+
+.bias-right {
+    grid-template-columns: auto 1fr;
+}
+
+.avatar-container {
+    overflow: hidden;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    align-self: center;
+}
+
+.avatar-container::before{
+    content: "";
+    background-color: linear-gradient(45deg, purple, pink);
+    height: calc(100% + 5px);
+    width: calc(100% + 5px);
+    position: absolute;
+    border-radius: inherit;
+}
+
+.avatar-container img {
+    height: 50px;
+    width: auto;
+}
+
+.username {
+    /* border: 1px solid green; */
+    font-weight: 600;
+}
+
+.icon img {
+    width: 16px;
+}
+
+.card-body {
+    height: 500px;
+    /* border: 1px solid purple; */
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.card-body img {
+    height: 100%;
+    width: auto;
+}
+
+.more {
+    align-self: center;
+}
+
+.card-footer {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.action-row{
+    display: grid;
+    grid-template-columns: auto auto auto 1fr;
+    justify-items: start;
+    /* border: 1px solid red; */
+    grid-gap: 20px;
+}
+
+.action-row img {
+    width: 24px;
+}
+
+.flip-z {
+    transform: scaleX(-1);
+}
+
+.justify-end {
+    justify-self: end;
+}
+
+.likes {
+    font-weight: 600;
+    font-size: 0.9em;
+}
+
+.description > *:first-child{
+    margin-right: 5px;
+}
+
+.view-comments {
+    color: #737373;
+}
